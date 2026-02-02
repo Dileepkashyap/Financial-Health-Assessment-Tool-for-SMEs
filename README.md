@@ -302,3 +302,4 @@ GUVI × HCL Hackathon 2026
  *Thank you for reviewing this project.*
 
 ---
+![A screenshot of the application](images/screenshot(141.png)
