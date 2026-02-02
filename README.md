@@ -302,3 +302,12 @@ GUVI × HCL Hackathon 2026
  *Thank you for reviewing this project.*
 
 ---
+<img width="1920" height="856" alt="Screenshot (139)" src="https://github.com/user-attachments/assets/2566570e-8b55-44f6-a1ab-4f3954d0d80b" />
+<img width="1920" height="877" alt="Screenshot (141)" src="https://github.com/user-attachments/assets/d9aa2fe1-ff2f-4836-b665-322c6faa02c7" />
+<img width="1920" height="910" alt="Screenshot (142)" src="https://github.com/user-attachments/assets/cecb90aa-3e52-4b15-8d73-c0460809ae17" />
+<img width="1920" height="851" alt="Screenshot (149)" src="https://github.com/user-attachments/assets/37247e8c-6a42-4715-afd3-b4ce7dcef1e0" />
+<img width="1920" height="861" alt="Screenshot (150)" src="https://github.com/user-attachments/assets/212dbcc9-a834-45fd-b4cb-ecd635be0c6c" />
+
+
+
+
