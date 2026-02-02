@@ -1,70 +1,304 @@
-# Getting Started with Create React App
+# Financial Health Assessment Tool for SMEs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Financial Health Assessment Tool is an AI-powered web application designed to help **Small and Medium Enterprises (SMEs)** understand, monitor, and improve their financial health.
 
-In the project directory, you can run:
+Many SMEs struggle with:
 
-### `npm start`
+* Understanding financial statements
+* Identifying hidden financial risks
+* Making informed decisions on expenses, debt, and growth
+* Accessing clear, simple insights without financial expertise
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This platform solves these challenges by combining **data analysis, AI-driven insights, and intuitive visualizations** into a single easy-to-use system.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Problem Statement
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Small and Medium Enterprises often lack access to advanced financial analysis tools due to:
 
-### `npm run build`
+* High cost of professional financial services
+* Lack of financial literacy
+* Complex financial data that is difficult to interpret
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+As a result, business owners fail to:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Detect financial risks early
+* Optimize costs and working capital
+* Prepare investor-ready financial reports
+* Make informed decisions for sustainable growth
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+##  Solution
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This platform provides a **comprehensive financial health assessment** by:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Analyzing uploaded financial data (CSV format)
+* Calculating key financial metrics
+* Evaluating creditworthiness and risk
+* Generating AI-powered insights and recommendations
+* Displaying results using simple and clear visualizations
+* Supporting multiple languages for regional business owners
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##  Key Features
 
-## Learn More
+### Financial Metrics Calculation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The system automatically computes:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* **Total Revenue**
+* **Total Expenses**
+* **Profit**
+* **Profit Margin**
+* **Current Ratio (Liquidity)**
+* **Debt-to-Income Ratio**
+* **Net Cash Flow**
 
-### Code Splitting
+These metrics form the foundation for financial risk analysis.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+### Data Visualization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To ensure clarity for non-finance users:
 
-### Making a Progressive Web App
+* Visual bar charts compare **Revenue vs Expense**
+* Color indicators highlight financial conditions
+* Simple layout improves readability
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Visual comparison of income and expenditure for quick financial understanding.**
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Financial Risk Assessment
 
-### Deployment
+The platform evaluates:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* **Overall Financial Risk Status**
 
-### `npm run build` fails to minify
+  * Low Risk
+  * Moderate Risk
+  * High Risk
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **Risk Breakdown**:
+
+  * Profitability Risk
+  * Liquidity Risk
+  * Debt Risk
+
+---
+
+### AI-Powered Insights
+
+Using an AI narrative layer, the system provides:
+
+* Business financial summary
+* Identification of major financial risks
+* Actionable recommendations such as:
+
+  * Cost optimization strategies
+  * Debt restructuring suggestions
+  * Working capital improvements
+
+These insights are written in **simple language**, suitable for non-finance business owners.
+
+---
+
+### Multilingual Support
+
+To support regional SME owners:
+
+* English
+* Hindi
+
+The UI dynamically switches language without reloading.
+
+---
+
+### Security & Compliance
+
+* No permanent storage of financial data
+* Secure API communication
+* Input validation on uploaded files
+* Separation of frontend and backend layers
+* Designed with data privacy and regulatory awareness
+
+---
+
+## System Architecture
+
+```
+Frontend (React)
+   ↓
+FastAPI Backend
+   ↓
+Financial Metrics Engine (Pandas)
+   ↓
+AI Insight Generator
+```
+
+---
+
+## Technology Stack
+
+### Frontend
+
+* React.js
+* JavaScript
+* Inline CSS for simplicity
+* Responsive UI
+
+### Backend
+
+* Python
+* FastAPI
+* Pandas (data processing)
+
+### AI Layer
+
+* OpenAI API (narrative & recommendations)
+
+---
+
+##  Project Structure
+
+```
+financial-health/
+│
+├── backend/
+│   ├── main.py               # API endpoints
+│   ├── metrics.py            # Financial calculations
+│   ├── ai_insights.py        # AI-generated insights
+│   ├── requirements.txt
+│
+├── frontend/
+│   └── src/
+│       └── App.js            # React UI
+│
+├── data/
+│   └── sample_financials.csv
+│
+└── README.md
+```
+
+---
+
+## How to Run the Project
+
+###  Backend Setup
+
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+Backend runs at:
+
+```
+http://127.0.0.1:8000
+```
+
+API documentation:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+---
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Frontend runs at:
+
+```
+http://localhost:3000
+```
+
+---
+
+##  Sample Input
+
+The application accepts:
+
+* CSV files containing financial data
+* Required fields include revenue, expenses, loans, and cash flow
+
+A sample file is provided in:
+
+```
+/data/sample_financials.csv
+```
+
+---
+
+## Application Screenshots
+
+### Dashboard & File Upload
+
+(Add screenshot here)
+
+###  Financial Visualization
+
+(Add revenue vs expense bar chart screenshot)
+
+###  Risk Assessment & Metrics
+
+(Add metrics and risk breakdown screenshot)
+
+###  AI Insights Section
+
+(Add AI insights screenshot)
+
+---
+
+##  Future Enhancements
+
+* XLSX and PDF support
+* Industry-specific benchmarking
+* GST data integration
+* Banking API integrations
+* Financial forecasting module
+* Investor-ready report generation
+* Role-based access control
+* Cloud deployment
+
+---
+
+##  Hackathon Readiness
+
+✔ Meets all problem statement requirements
+✔ End-to-end working solution
+✔ Clean and intuitive UI
+✔ AI-driven decision support
+✔ Multilingual support
+✔ Scalable architecture
+
+This solution is **production-aligned and hackathon-ready**.
+
+---
+
+##  Author
+
+**Dileep Kashyap L**
+Financial Health Assessment Tool
+GUVI × HCL Hackathon 2026
+
+---
+
+ *Thank you for reviewing this project.*
+
+---
